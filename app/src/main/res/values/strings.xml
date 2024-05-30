@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="character1">Rick Sanchez</string>
+    <string name="character2">Morty Smith</string>
+    <string name="character3">Summer Smith</string>
+    <string name="character4">Beth Smith</string>
+    <string name="character5">Jerry Smith</string>
+    <string name="character6">Mr.Meeseeks</string>
+    <string name="character7">Birdperson</string>
+    <string name="character8">Squanchy</string>
+    <string name="character9">Mr. Poopybutthole</string>
+    <string name="character10">Tammy Guetermann</string>
+    <string name="character11">Jessica</string>
+    <string name="character12">Evil Morty</string>
+    <string name="character13">Unity</string>
+    <string name="character14">Noob-Noob</string>
+    <string name="character15">Abradolf Lincler</string>
+</resources>
