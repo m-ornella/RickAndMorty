@@ -1,6 +1,5 @@
 package fr.epsi.nguyen_vitry.rickandmorty.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,6 @@ import fr.epsi.nguyen_vitry.rickandmorty.model.Characters
  * Adapter for the [RecyclerView] in [CharactersListActivity]. Displays [Characters] data object.
  */
 class ItemAdapter(
-    private val context: Context,
     private val dataset: List<Characters>
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
