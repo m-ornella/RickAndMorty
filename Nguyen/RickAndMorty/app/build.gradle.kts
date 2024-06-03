@@ -1,6 +1,8 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
 }
 
 android {
@@ -46,5 +48,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     implementation("androidx.activity:activity-ktx:1.2.3")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
 }
+
 
