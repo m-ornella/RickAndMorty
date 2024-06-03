@@ -4,6 +4,13 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@android:color/white" />
+
     <TextView
         android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
@@ -41,4 +48,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"/>
+
+    <ImageView
+        android:id="@+id/characterImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/character_image" />
 </LinearLayout>

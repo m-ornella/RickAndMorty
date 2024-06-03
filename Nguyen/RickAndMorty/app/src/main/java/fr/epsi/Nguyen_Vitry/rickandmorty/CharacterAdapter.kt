@@ -3,6 +3,8 @@ package fr.epsi.Nguyen_Vitry.rickandmorty
 import fr.epsi.Nguyen_Vitry.rickandmorty.model.Character
 import android.content.Intent
 import android.view.LayoutInflater
+import android.widget.ImageView
+import coil.load
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -26,7 +28,7 @@ class CharactersAdapter(private val characters: List<Character>) : RecyclerView.
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val nameTextView: TextView = itemView.findViewById(R.id.nameTextView)
-
+        private val characterImageView: ImageView = itemView.findViewById(R.id.characterImageView)
         init {
             itemView.setOnClickListener {
                 val character = characters[adapterPosition]
@@ -38,6 +40,7 @@ class CharactersAdapter(private val characters: List<Character>) : RecyclerView.
 
         fun bind(character: Character) {
             nameTextView.text = character.name
+            characterImageView.load(character.image)
         }
     }
 }

@@ -10,7 +10,8 @@ data class Character(
     val species: String,
     val gender: String,
     val origin: Location,
-    val location: Location
+    val location: Location,
+    val image: String
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
@@ -19,7 +20,8 @@ data class Character(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readParcelable(Location::class.java.classLoader) ?: Location("", ""),
-        parcel.readParcelable(Location::class.java.classLoader) ?: Location("", "")
+        parcel.readParcelable(Location::class.java.classLoader) ?: Location("", ""),
+        parcel.readString() ?: ""
     )
 
     override fun describeContents(): Int {
@@ -34,6 +36,7 @@ data class Character(
         parcel.writeString(gender)
         parcel.writeParcelable(origin, flags)
         parcel.writeParcelable(location, flags)
+        parcel.writeString(image)
     }
 
     companion object CREATOR : Parcelable.Creator<Character> {

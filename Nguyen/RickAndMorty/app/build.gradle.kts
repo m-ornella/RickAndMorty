@@ -49,6 +49,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     implementation("androidx.activity:activity-ktx:1.2.3")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("io.coil-kt:coil:2.1.0")
 }
 
 
