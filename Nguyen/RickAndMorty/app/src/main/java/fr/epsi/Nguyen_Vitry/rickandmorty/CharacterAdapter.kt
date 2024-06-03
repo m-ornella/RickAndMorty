@@ -1,12 +1,14 @@
 package fr.epsi.Nguyen_Vitry.rickandmorty
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import fr.epsi.Nguyen_Vitry.rickandmorty.model.Character
 
-class CharacterAdapter(private val characters: List<Character>) : RecyclerView.Adapter<CharacterAdapter.ViewHolder>() {
+class CharactersAdapter(private val characters: List<Character>) : RecyclerView.Adapter<CharactersAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val characterName: TextView = view.findViewById(R.id.characterName)
@@ -19,7 +21,8 @@ class CharacterAdapter(private val characters: List<Character>) : RecyclerView.A
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.characterName.text = characters[position].name
+        val character = characters[position]
+        holder.characterName.text = character.name
     }
 
     override fun getItemCount() = characters.size
